@@ -1,0 +1,57 @@
+.hint-discover {
+  display: flex;
+  gap: 12px;
+  max-width: 324px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
+}
+.hint-discover__picture {
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.hint-discover__desc {
+  flex-grow: 1;
+}
+.hint-discover__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+.hint-discover__rating {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+
+  &::before {
+    content: "";
+    width: 17px;
+    height: 16px;
+    background-image: url("./../img/icons/star-small.svg");
+    background-repeat: no-repeat;
+  }
+}
+.hint-discover__price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  span {
+    font-weight: 450;
+  }
+
+  i {
+    color: var(--accent);
+    font-style: normal;
+  }
+}
