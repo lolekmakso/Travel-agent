@@ -1,14 +1,29 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
+  padding: 80px 0;
+  background-color: #181818;
+  color: #fff;
+
+  a {
     color: #fff;
+  }
+}
 
-	h1 {
-		font-size: 32px;
-	}
+.footer__row {
+  display: grid;
+  gap: 128px;
+  grid-template-columns: 1fr 1fr;
+}
+.footer__copyright {
+  max-width: 300px;
+}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
+.footer__logo {
+  margin-bottom: 24px;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  column-gap: 40px;
 }

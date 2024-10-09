@@ -1,0 +1,25 @@
+.footer-nav {
+}
+.footer-nav__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+.footer-nav__list {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 150%;
+
+  li {
+    padding: 8px 0;
+  }
+
+  a {
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      color: #35aff4;
+    }
+  }
+}
