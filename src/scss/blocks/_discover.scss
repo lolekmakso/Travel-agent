@@ -24,10 +24,19 @@
   position: absolute;
   top: 90px;
   left: 40px;
+
+  @include mediaLaptop {
+    top: 40px;
+    left: 20px;
+  }
 }
 
 .discover__picture-scroll {
   position: absolute;
   right: 15px;
   bottom: 20px;
+
+  @include mediaLaptop {
+    bottom: 0px;
+  }
 }
