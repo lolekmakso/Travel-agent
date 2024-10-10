@@ -7,8 +7,11 @@ autoCompleteFunc()
 import easepickFun from "./modules/easepick";
 easepickFun ()
 
-import swiperFunc from "./modules/swiper";
+import swiperFunc from "./modules/swiper-popular";
 swiperFunc ()
+
+import swiperTestimonials from "./modules/swiper-testimonials";
+swiperTestimonials ()
 
 import scrollRevealFunc from "./modules/scrollReveal";
 scrollRevealFunc ()
