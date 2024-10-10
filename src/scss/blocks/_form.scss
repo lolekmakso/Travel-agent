@@ -26,6 +26,10 @@
     font-weight: 500;
     font-size: 16px;
   }
+
+  &--calendar{
+    background-image: url(./../img/icons/calendar.svg);
+  }
 }
 
 .form__input {

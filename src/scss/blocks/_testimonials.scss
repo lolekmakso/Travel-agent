@@ -4,8 +4,9 @@
 .testimonials__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 12px;
   overflow: hidden;
+  margin: 0 -10px;
 }
 .testimonials__col {
   // display: grid;

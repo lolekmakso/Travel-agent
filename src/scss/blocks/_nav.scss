@@ -2,13 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  gap: 30px;
 }
+
+.nav__logo {
+  flex-shrink: 0;
+}
+
 .nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
 
   a {
     color: #181818;
@@ -19,12 +24,24 @@
       color: #35aff4;
     }
   }
+
+  @include mediaMobile {
+    display: none;
+  }
 }
 .nav__btns {
   display: flex;
   gap: 12px;
+
+  @include mediaMobile {
+    display: none;
+  }
 }
-.btn-login {
-}
-.btn-signup {
+
+.nav__icon {
+  display: none;
+
+  @include mediaMobile {
+    display: block;
+  }
 }
