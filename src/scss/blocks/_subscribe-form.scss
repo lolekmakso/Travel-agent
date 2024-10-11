@@ -2,8 +2,18 @@
   display: flex;
   gap: 12px;
   align-items: center;
+
+  @include mediaTablet {
+    justify-content: center;
+  }
+
+  @include mediaMobileS{
+    flex-direction: column;
+    align-items: stretch
+  }
 }
 .subscribe-form__input {
+  z-index: 2;
   flex-grow: 1;
   padding: 12px;
   padding-left: 44px;
@@ -26,9 +36,14 @@
   &::placeholder {
     color: var(--text-muted);
   }
+
+  @include mediaMobileS{
+    max-width: none;
+  }
 }
 
 .subscribe-form__btn {
+  z-index: 2;
   border-radius: 8px;
   padding: 12px 24px;
   height: 48px;

@@ -34,12 +34,30 @@ img {
     height: 24px;
     z-index: -1;
     background-image: url("./../../img/discover/underline.svg");
+
+    @include mediaMobile {
+      width: 134px;
+      height: 12px;
+      background-size: contain;
+    }
+  }
+
+  @include mediaTablet {
+    font-size: 52px;
+  }
+
+  @include mediaMobile {
+    font-size: 36px;
   }
 }
 
 .title-3 {
   font-weight: 500;
   font-size: 36px;
+
+  @include mediaMobile{
+    font-size: 28px;
+  }
 }
 
 .text {
@@ -50,6 +68,10 @@ img {
 
   p + p {
     margin-top: 1em;
+  }
+
+  @include mediaMobile {
+    font-size: 16px;
   }
 }
 

@@ -1,5 +1,5 @@
 .subscribe {
-    overflow: hidden;
+  overflow: hidden;
   padding: 80px 0;
   background-color: var(--accent);
   color: #fff;
@@ -22,20 +22,33 @@
     background-image: url("./../img/subscribe/subscribe-pin-bg.svg");
     background-repeat: no-repeat;
   }
-}
-.subscribe__desc {
+
+  @include mediaTablet {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0px;
+    align-items: stretch;
+  }
 }
 
 .subscribe__title {
   font-weight: 500;
   font-size: 28px;
   margin-bottom: 4px;
+
+  @include mediaMobile {
+    font-size: 22px;
+  }
 }
 .subscribe__text {
   font-weight: 450;
   font-size: 20px;
+
+  @include mediaMobile {
+    font-size: 16px;
+  }
 }
 
 .subscribe__form {
-    flex-grow: 1;
-  }
+  flex-grow: 1;
+}

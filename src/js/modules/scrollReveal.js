@@ -8,9 +8,6 @@ ScrollReveal({
 });
 
 function scrollRevealFunc () {
-	ScrollReveal().reveal(`.header, .partners`,{
-		origin: 'top',
-	  }),
 	  ScrollReveal().reveal(`.discover__picture-hint, .discover__title, .popular__title`,{
 		origin: 'left',
 	  }),

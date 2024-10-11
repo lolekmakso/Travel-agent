@@ -2,8 +2,8 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 function swiperTestimonials() {
   const swiper = new Swiper("#testimonials-col-1", {
-    direction: 'vertical',
-    slidesPerView: 'auto',
+    direction: 'horizontal',
+    slidesPerView: '1',
     spaceBetween: 32,
     grabCursor: true,
 		a11y: false,
@@ -14,11 +14,24 @@ function swiperTestimonials() {
 			delay: 0.0,
 			disableOnInteraction: false,
 		},
+
+		breakpoints: {
+			425: {
+                slidesPerView: '1.5',
+			},
+			768: {
+                slidesPerView: '2',
+			},
+			1025: {
+				direction: 'vertical',
+                slidesPerView: 'auto',
+			}
+		},
   });
 
   const swiper2 = new Swiper("#testimonials-col-2", {
-    direction: 'vertical',
-    slidesPerView: 'auto',
+    direction: 'horizontal',
+    slidesPerView: '1',
     spaceBetween: 32,
     grabCursor: true,
 		a11y: false,
@@ -30,11 +43,24 @@ function swiperTestimonials() {
 			disableOnInteraction: false,
       reverseDirection: true
 		},
+
+		breakpoints: {
+			425: {
+                slidesPerView: '1.5',
+			},
+			768: {
+                slidesPerView: '2',
+			},
+			1025: {
+				direction: 'vertical',
+                slidesPerView: 'auto',
+			}
+		},
   });
 
   const swiper3 = new Swiper("#testimonials-col-3", {
-    direction: 'vertical',
-    slidesPerView: 'auto',
+    direction: 'horizontal',
+    slidesPerView: '1',
     spaceBetween: 32,
     grabCursor: true,
 		a11y: false,
@@ -44,6 +70,19 @@ function swiperTestimonials() {
 		autoplay: {
 			delay: 0.0,
 			disableOnInteraction: false,
+		},
+
+		breakpoints: {
+			425: {
+                slidesPerView: '1.5',
+			},
+			768: {
+                slidesPerView: '2',
+			},
+			1025: {
+				direction: 'vertical',
+                slidesPerView: 'auto',
+			}
 		},
   });
 }

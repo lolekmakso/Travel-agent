@@ -6,12 +6,22 @@
   a {
     color: #fff;
   }
+
+  @include mediaMobile {
+    padding: 40px 0;
+  }
 }
 
 .footer__row {
   display: grid;
   gap: 128px;
   grid-template-columns: 1fr 1fr;
+
+  @include mediaMobile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 90px;
+  }
 }
 .footer__copyright {
   max-width: 300px;
@@ -26,4 +36,12 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   column-gap: 40px;
+
+  @include mediaMobile {
+    column-gap: 100px;
+  }
+
+  @include mediaMobileS {
+    column-gap: 40px;
+  }
 }
