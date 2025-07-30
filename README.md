@@ -1,7 +1,4 @@
 ## ✈️ Travel Agent — Landing page
-- HTML
-- CSS
-- Gulp
 
 ## 🌍 Live Preview
 - 🔗 [Live Demo](https://lolekmakso.github.io/Travel-agent/)
